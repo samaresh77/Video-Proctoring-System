@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Proctoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Proctoring System</h1>
+        
+        <div class="candidate-info">
+            <input type="text" id="candidateName" placeholder="Enter candidate name">
+            <button id="startBtn">Start Interview</button>
+            <button id="stopBtn" disabled>End Interview</button>
+        </div>
+        
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="output"></canvas>
+        </div>
+        
+        <div class="status-panel">
+            <h2>Status</h2>
+            <div id="status">Not started</div>
+            <div class="events">
+                <h3>Events Log</h3>
+                <ul id="eventsList"></ul>
+            </div>
+        </div>
+        
+        <div class="report-section">
+            <button id="generateReport" disabled>Generate Report</button>
+            <div id="report"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

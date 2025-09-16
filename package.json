@@ -1,0 +1,29 @@
+{
+  "name": "video-proctoring-system",
+  "version": "1.0.0",
+  "description": "A system to proctor online interviews using computer vision",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "proctoring",
+    "computer-vision",
+    "online-interview"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
